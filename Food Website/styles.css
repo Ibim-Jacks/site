@@ -1,0 +1,325 @@
+body, html {
+    height: 100%;
+}
+
+.bg-image {
+    /* Image used */
+    background-image: url("https://media.istockphoto.com/photos/african-national-food-dish-nigerian-grilled-meat-and-chicken-dish-picture-id1219948971?k=20&m=1219948971&s=612x612&w=0&h=yL6Lt_T-OveIJxqNe6Q_g5dd4b7jtfra4gn1X5qW19o=");
+    
+    /* Add Blur Effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px)
+    ;
+    /* Full Height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-div {
+    /* Position text in the middle of the page/image */
+    border-radius: 50px;
+    background-color: rgba(235, 232, 232, 0.811); /* Fallback color */
+    background-color: rgba(243, 238, 238, 0.432); /* Black w/opacity/see-through */
+    color: rgb(29, 27, 27);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 75%;
+    height: 62.5%;
+    padding: 4.5rem 4.5rem 4.5rem 5.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.nvbr-child {
+    display: inline-block;
+}
+
+.nvbr-child:last-child {
+    height: 4.5rem;
+    width: 3.9rem;
+    float: right;
+    background-color: rgb(29, 28, 28);
+    color: rgba(227, 218, 201, 0.911);
+    border-start-start-radius: 1.3rem;
+    border-start-end-radius: 1rem;
+    border-end-start-radius: 1.3rem;
+    border-end-end-radius: 2.4rem;
+}
+
+.nvbr-child:last-child:hover {
+    color: rgba(228, 214, 187, 0.911);
+    background-color: rgb(55, 52, 52);
+}
+
+.nvbr-child-icon {
+    padding: 17px 17px 20px 12px;
+    size: 3.8rem;
+}
+
+.nvbr-left-big-txt {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.nvbr-left-small-txt {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+/* Below Navigation Bar */
+.below-nvbr {
+    margin-top: 60px;
+}
+.heading {
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+.btn {
+    border-start-start-radius: 17px;
+    border-start-end-radius: 17px;
+    border-end-start-radius: 17px;
+    border-end-end-radius: none;
+    border: 0;
+    height: 3rem;
+    width: 13rem;
+    background-color: rgb(29, 28, 28);
+    color: rgba(227, 218, 201, 0.911);
+}
+
+.btn:hover {
+    color: rgba(209, 195, 173, 0.94);
+    background-color: rgb(33, 32, 32);
+    cursor: default;
+}
+
+.heading-btn{
+    border-start-start-radius: 17px;
+    border-start-end-radius: 17px;
+    border-end-start-radius: 17px;
+    border-end-end-radius: none;
+    width: 13rem;
+    height: 3rem;
+    box-shadow: 10px 10px 10px rgba(62, 62, 59, 0.911);
+    margin-top: 14px;
+}
+
+.heading-btn:hover {
+    box-shadow: 10px 10px 10px rgba(222, 222, 213, 0.911);
+}
+
+.btn-txt {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn-txt-spn {
+    padding-left: 1rem;
+}
+
+.dsp-img-top {
+    position: absolute;
+    border: 5px solid rgba(238, 230, 237, 0.911);
+    width: 24%;
+    border-radius: 30% 0;
+    margin: 2.7% 8% 20%;
+    z-index: 0;
+}
+
+.dsp-img {
+    position: absolute;
+    z-index: +1;
+}
+
+.dsp-img-one {
+    border: 5px rgba(238, 230, 237, 0.911);
+    border-style: none solid solid none;
+    border-radius: 9rem;
+    margin-top: .3%;
+    margin-left: 3.7%;
+    width: 8.2%;
+    height: 15%;
+}
+
+.dsp-img-two {
+    border-radius: 19rem;
+    border: 10px groove rgba(238, 230, 237, 0.911);
+    margin-top: 14.7%;
+    margin-left: 27%;
+    width: 8%;
+    height: 15%;
+    background-color: #fff;
+}
+
+.below-nvbr {
+    display: inline-block;
+    width: 47%;
+}
+
+.below-nvbr:last-child {
+    float: right;
+}
+
+
+/* for tablet screens */
+@media screen and (min-width: 1200px) and (max-width: 1402px) {
+    .main-div {
+        width: 74%;
+        height: 67%;
+    }
+
+    .heading {
+        font-size: 2.9rem;
+    }
+
+    .dsp-img-top {
+        margin-top: -27.5%;
+        margin-left: 6%;
+        width: 22%;
+    }
+
+    .dsp-img-one {
+        margin-top: -29%;
+        margin-left: 3%;
+        width: 6.4%;
+        height: 10%;
+    }
+
+    .dsp-img-two {
+        margin-top: -16.4%;
+        margin-left: 24.4%;
+        width: 6.2%;
+        height: 10%;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+    .main-div {
+        width: 74%;
+        height: 67%;
+    }
+
+    .dsp-img-top {
+        margin-top: -36.5%;
+        margin-left: .4%;
+        width: 28%;
+    }
+
+    .dsp-img-one {
+        margin-top: -38%;
+        margin-left: -3%;
+        width: 9%;
+        height: 11%;
+    }
+
+    .dsp-img-two {
+        margin-top: -22.8%;
+        margin-left: 23.2%;
+        width: 8%;
+        height: 11%;
+    }
+}
+
+/* for mobile screens */
+@media screen and (min-width: 605px) and (max-width: 850px) {
+    .main-div {
+        width: 67%;
+        height: 83%;
+        border-radius: 40px;
+    }
+
+    .heading {
+        font-size: 2.4rem;
+        position: absolute;
+    }
+
+    .below-nvbr {
+        margin-top: 40px;
+    }
+
+    .nvbr-left-big-txt {
+        font-size: 1.4rem;
+    }
+
+    .dsp-img-top {
+        margin-top: 30%;
+        margin-left: -38%;
+        width: 38%;
+    }
+
+    .dsp-img-one {
+        margin-top: 26%;
+        margin-left: -43%;
+        width: 13%;
+        height: 8.9%;
+    }
+
+    .dsp-img-two {
+        margin-top: 50%;
+        margin-left: -7%;
+        width: 11.5%;
+        height: 8%;
+    }
+
+    .heading-btn {
+        position: absolute;
+        margin-top: 84%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 605px) {
+    .main-div {
+        width: 67%;
+        height: 83%;
+        border-radius: 40px;
+    }
+
+    .heading {
+        font-size: 2.4rem;
+        position: absolute;
+    }
+
+    .below-nvbr {
+        margin-top: 40px;
+    }
+
+    .nvbr-left-big-txt {
+        font-size: 1.4rem;
+    }
+
+    .dsp-img-top {
+        margin-top: 30%;
+        margin-left: -35%;
+        width: 38%;
+    }
+
+    .dsp-img-one {
+        margin-top: 26%;
+        margin-left: -40%;
+        width: 13%;
+        height: 7.5%;
+    }
+
+    .dsp-img-two {
+        margin-top: 50%;
+        margin-left: -4%;
+        width: 11.5%;
+        height: 6.5%;
+    }
+
+    .heading-btn {
+        position: absolute;
+        margin-top: 84%;
+    }
+}
+
